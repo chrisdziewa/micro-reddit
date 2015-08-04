@@ -1,0 +1,16 @@
+## Micro reddit
+
++ Users
+    - id: integer
+    - name: string (present, minimum length 3 chars)
+    - email: string (present,  unique,  not case sensitive, format with regex)
+
++ Posts
+    - title: string (present, minimum 15 chars)
+    - link: string (present, unique, minimum 3 char)
+    - user_id: integer
+
++ Comments
+    - user_id: integer (present)
+    - post_id: integer (present)
+    - content: text (present, minimum length 2)
